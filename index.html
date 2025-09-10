@@ -9,7 +9,104 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/table.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
 
+<body>
+    <header>
+        <div class="rgt-container">
+            <h1 class="header-title">UJV</h1>
+            <nav>
+                <ul>
+                    <li>Destinations <img src="./public/icons/Icon.svg" alt=""></li>
+                    <li>Preffered Collections <img src="./public/icons/Icon.svg" alt=""></li>
+                    <li>Experiences <img src="./public/icons/Icon.svg" alt=""></li>
+                    <li>Our Programs <img src="./public/icons/Icon.svg" alt=""></li>
+                    <li>Resources <img src="./public/icons/Icon.svg" alt=""></li>
+                    <li>About Us <img src="./public/icons/Icon.svg" alt=""></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="lft-container">Sign in</div>
+    </header>
+
+    <main>
+
+        <input type="checkbox" id="tripCreate" class="modal-toggle">
+        <!-- <input type="checkbox" id="tripEliminate" class="modal-toggle">
+        <input type="checkbox" id="tripEdit" class="modal-toggle"> -->
+
+        <section class="table-container">
+            <div class="table-top">
+                <h1>My Trips</h1>
+
+                <label for="tripCreate" class="btn-open">+ Create Trip</label>
+            </div>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Client Name</th>
+                            <th>Travel Dates</th>
+                            <th>Penalty Date</th>
+                            <th>Total Amount</th>
+                            <th>Commission</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tripsTableBody">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+        <div class="modal">
+            <div class="modal-content">
+
+                <h2>Create a New Trip</h2>
+                <form id="tripForm">
+                    <label for="tripName">Trip name *</label>
+                    <input type="text" class="tripName" id="tripName" required>
+                    <div class="inputs-create">
+                        <label for="tripCreate" class="btn-cancel">Cancel</label>
+                        <button type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- <div class="modal-edit">
+            <div class="modal-content">
+                <h2>Create a New Trip</h2>
+                <form id="tripForm">
+                    <input type="text" class="tripName" id="tripName" required>
+                    <div class="inputs-create">
+                        <label for="tripCreate" class="btn-cancel">Cancel</label>
+                        <button type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+
+    </main>
+
+
+    <script src="./src/validateTrip.js"></script>
+    <script src="./src/defaultTrip.js"></script>
+    <script src="./src/CRUDTrip.js"></script>
+    <script src="./src/renderTrips.js"></script>
+    <script src="./src/formHandler.js"></script>
+    <script src="./src/main.js"></script>
+    <main>
+    </main>
 </body>
 
 </html>
