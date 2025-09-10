@@ -1,0 +1,35 @@
+header {
+  background: linear-gradient(
+    to right,
+    rgba(230,225,214,1) 48%,
+    rgba(230,225,214,0.5) 84%,
+    rgba(230,225,214,0) 100%
+  );
+  display: flex;
+  flex-wrap: nowrap;            
+  align-items: center;
+  justify-content: space-between; 
+  height: 88px;
+  padding-inline: 48px;
+  gap: 32px;
+}
+
+.rgt-container,
+.lft-container,
+ul {
+  display: flex;
+  flex-wrap: nowrap;    
+  align-items: center;
+  gap: 32px;       
+  list-style: none;
+  min-width: 0;                   
+}
+
+.lft-container {
+  flex-direction: row-reverse;
+  margin-left:  200px;
+}
+
+header a, header li, header button {
+  font-size: 12px;
+}
