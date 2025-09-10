@@ -36,8 +36,8 @@
     <main>
 
         <input type="checkbox" id="tripCreate" class="modal-toggle">
-        <!-- <input type="checkbox" id="tripEliminate" class="modal-toggle">
-        <input type="checkbox" id="tripEdit" class="modal-toggle"> -->
+        <input type="checkbox" id="tripEliminate" class="modal-toggle">
+        <!-- <input type="checkbox" id="tripEdit" class="modal-toggle"> -->
 
         <section class="table-container">
             <div class="table-top">
@@ -47,6 +47,16 @@
             </div>
 
             <div class="table">
+                <input type="search" name="searchTrip" id="searchTrip" placeholder="Search by Client or Trip Name">
+                <label for="status-select">Status</label>
+                <select id="status-select">
+                    <option value="">All</option>
+                    <option value="Quoting">Quoting</option>
+                    <option value="Traveled">Traveled</option>
+                    <option value="Active Booking">Active Booking</option>
+                </select>
+
+
                 <table>
                     <thead>
                         <tr>
@@ -83,9 +93,9 @@
             </div>
         </div>
 
-        <!-- <div class="modal-edit">
+        <!-- <div class="modal-eliminate ">
             <div class="modal-content">
-                <h2>Create a New Trip</h2>
+                <h2>Eliminate trip</h2>
                 <form id="tripForm">
                     <input type="text" class="tripName" id="tripName" required>
                     <div class="inputs-create">
@@ -105,6 +115,7 @@
     <script src="./src/renderTrips.js"></script>
     <script src="./src/formHandler.js"></script>
     <script src="./src/main.js"></script>
+    <script src="./src/filtrer/filtros.js"></script>
     <main>
     </main>
 </body>
