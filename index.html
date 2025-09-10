@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/table.css">
+    <link rel="stylesheet" href="./styles/modal.css">
 </head>
 
 <body>
@@ -33,6 +34,11 @@
     </header>
 
     <main>
+
+        <input type="checkbox" id="tripCreate" class="modal-toggle">
+        <!-- <input type="checkbox" id="tripEliminate" class="modal-toggle">
+        <input type="checkbox" id="tripEdit" class="modal-toggle"> -->
+
         <section class="table-container">
             <div class="table-top">
                 <h1>My Trips</h1>
@@ -61,6 +67,38 @@
 
             </div>
         </section>
+
+        <div class="modal">
+            <div class="modal-content">
+
+                <h2>Create a New Trip</h2>
+                <form id="tripForm">
+                    <label for="tripName">Trip name *</label>
+                    <input type="text" class="tripName" id="tripName" required>
+                    <div class="inputs-create">
+                        <label for="tripCreate" class="btn-cancel">Cancel</label>
+                        <button type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- <div class="modal-edit">
+            <div class="modal-content">
+                <h2>Create a New Trip</h2>
+                <form id="tripForm">
+                    <input type="text" class="tripName" id="tripName" required>
+                    <div class="inputs-create">
+                        <label for="tripCreate" class="btn-cancel">Cancel</label>
+                        <button type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+
+    </main>
+
+
     <main>
     </main>
 </body>
