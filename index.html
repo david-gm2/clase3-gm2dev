@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/table.css">
     <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/modal-edit.css">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
     <main>
 
         <input type="checkbox" id="tripCreate" class="modal-toggle">
-        <input type="checkbox" id="tripEliminate" class="modal-toggle">
+        <input type="checkbox" id="trip-eliminate" class="modal-toggle">
         <!-- <input type="checkbox" id="tripEdit" class="modal-toggle"> -->
 
         <section class="table-container">
@@ -48,6 +49,7 @@
 
             <div class="table">
                 <input type="search" name="searchTrip" id="searchTrip" placeholder="Search by Client or Trip Name">
+
                 <label for="status-select">Status</label>
                 <select id="status-select">
                     <option value="">All</option>
@@ -93,18 +95,19 @@
             </div>
         </div>
 
-        <!-- <div class="modal-eliminate ">
+        <div class="modal-eliminate ">
             <div class="modal-content">
-                <h2>Eliminate trip</h2>
-                <form id="tripForm">
+                <h2>Conrfimr Eliminate Trip</h2>
+                <form id="trip-form-eliminate">
+                    <label for="tripName">Confirm name of the trip to delete*</label>
                     <input type="text" class="tripName" id="tripName" required>
                     <div class="inputs-create">
-                        <label for="tripCreate" class="btn-cancel">Cancel</label>
-                        <button type="submit">Create</button>
+                        <label for="trip-eliminate" class="btn-cancel">Cancel</label>
+                        <button type="submit">Eliminate</button>
                     </div>
                 </form>
             </div>
-        </div> -->
+        </div>
 
     </main>
 
@@ -112,7 +115,6 @@
     <script src="./src/validateTrip.js"></script>
     <script src="./src/defaultTrip.js"></script>
     <script src="./src/CRUDTrip.js"></script>
-    <script src="./src/renderTrips.js"></script>
     <script src="./src/formHandler.js"></script>
     <script src="./src/main.js"></script>
     <script src="./src/filtrer/filtros.js"></script>

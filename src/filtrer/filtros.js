@@ -25,6 +25,7 @@ function renderTrips(filter = "", status = "") {
       <td>${trip.status}</td>
       <td>
       <button data-id="${trip.id}">❌</button>
+      <label for="trip-eliminate" data-id="${trip.id}">elim</label>
       <button data-id="${trip.id}">📝</button>
       </td>
     `;

@@ -20,6 +20,8 @@ function renderTrips(filter = "") {
       <td>${trip.status}</td>
       <td>
       <button data-id="${trip.id}">❌</button>
+      <button data-id="${trip.id}">❌</button>
+      <lable data-id="${trip.id}">❌</lable>
       <button data-id="${trip.id}">📝</button>
       </td>
     `;

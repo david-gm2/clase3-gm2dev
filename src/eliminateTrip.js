@@ -1,10 +1,5 @@
 const $formulario = document.getElementById('tripForm');
-const $nameNewTrip = $formulario.querySelector('.tripName');
-
-function getTrips() {
-  const stored = localStorage.getItem("trips");
-  return stored ? JSON.parse(stored) : [];
-}
+const $nameEliminateTrip = $formulario.querySelector('.trip-form-eliminate');
 
 const trip = {
   tripName: "New Trip",

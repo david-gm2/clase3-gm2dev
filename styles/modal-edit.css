@@ -1,12 +1,11 @@
-/* 
-.modal {
+.modal-eliminate {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.6);
   display: none;
 }
 
-#tripCreate:checked ~ .modal {
+#trip-eliminate:checked ~ .modal-eliminate {
   display: block;
 }
 
@@ -68,4 +67,4 @@
 
 .modal-content button[type="submit"]:hover {
   background: #d6de0a;
-} */
+}
