@@ -1,0 +1,29 @@
+main{
+background-color: #F3F4F6;
+display: flex;
+}
+
+.table-container{
+    padding: 40px;
+}
+
+.table-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px ;
+    align-items: center;
+}
+
+.table-top h1{
+    font-weight: 100;
+}
+
+.btn-open {
+    padding: 16px 24px ;
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+    align-content: center;
+    justify-content: center;
+}
+

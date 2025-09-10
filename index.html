@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/table.css">
 </head>
 
 <body>
@@ -30,6 +32,35 @@
         <div class="lft-container">Sign in</div>
     </header>
 
+    <main>
+        <section class="table-container">
+            <div class="table-top">
+                <h1>My Trips</h1>
+
+                <label for="tripCreate" class="btn-open">+ Create Trip</label>
+            </div>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Client Name</th>
+                            <th>Travel Dates</th>
+                            <th>Penalty Date</th>
+                            <th>Total Amount</th>
+                            <th>Commission</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tripsTableBody">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
     <main>
     </main>
 </body>
